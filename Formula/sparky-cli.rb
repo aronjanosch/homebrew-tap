@@ -5,21 +5,21 @@
 class SparkyCli < Formula
   desc "CLI for SparkyFitness - log food, exercise, and biometrics from your terminal"
   homepage "https://github.com/aronjanosch/sparky-cli"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.5/sparky_0.2.5_darwin_amd64.tar.gz"
-      sha256 "42d3d0c73b4f0a1f00007ac1bd669e0907fca73bab2cb7e1f0bf01891148bc25"
+      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.6/sparky_0.2.6_darwin_amd64.tar.gz"
+      sha256 "e791503db1e283f4a77642a2a0dae0a608d846cc5fedb965e3d2f8bd96b1e042"
 
       define_method(:install) do
         bin.install "sparky"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.5/sparky_0.2.5_darwin_arm64.tar.gz"
-      sha256 "a7d927497f2f60564127c2a80a1f309c9a6dc23e78865820826d2c22c342ff26"
+      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.6/sparky_0.2.6_darwin_arm64.tar.gz"
+      sha256 "3bf4a174620c056fcb265392267edc13b1bfba4da07f6a3038cc049a303e998d"
 
       define_method(:install) do
         bin.install "sparky"
@@ -29,15 +29,15 @@ class SparkyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.5/sparky_0.2.5_linux_amd64.tar.gz"
-      sha256 "f51621ad0c2016e8cdd1343e123eeadce5ab8bd70ee83fdf69398085380fc485"
+      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.6/sparky_0.2.6_linux_amd64.tar.gz"
+      sha256 "a1eff60f80c76be9d092a02d7d4b7eefd53cb0306116e154fbb2378fcd4e14ad"
       define_method(:install) do
         bin.install "sparky"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.5/sparky_0.2.5_linux_arm64.tar.gz"
-      sha256 "20b4ed8e5494f3953d1edbfea0c8ed5e89320a01fa42048030a53e08e46b39e4"
+      url "https://github.com/aronjanosch/sparky-cli/releases/download/v0.2.6/sparky_0.2.6_linux_arm64.tar.gz"
+      sha256 "162cba64c01d524dc1f514a8563f7277e6b00af60064442e528ad9bf05dcf0cf"
       define_method(:install) do
         bin.install "sparky"
       end
