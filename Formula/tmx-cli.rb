@@ -5,21 +5,21 @@
 class TmxCli < Formula
   desc "Thermomix/Cookidoo CLI — meal plans, recipe search, and shopping lists from your terminal"
   homepage "https://github.com/aronjanosch/tmx-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.0/tmx_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b094696130990e5a53ad703c23484ad86010212eceba6e4f6bf593ba95fdfedc"
+      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.1/tmx_0.2.1_darwin_amd64.tar.gz"
+      sha256 "b69391b1c7cd55f1ca26c3ddd69683dbd51dd3c0ca980d19c8cf3fac25da4cef"
 
       define_method(:install) do
         bin.install "tmx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.0/tmx_0.2.0_darwin_arm64.tar.gz"
-      sha256 "7fcb7dccb86923271dffcba67297a06d4fb1134c6373b039f33400a401731813"
+      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.1/tmx_0.2.1_darwin_arm64.tar.gz"
+      sha256 "7f6a34e56b98356dd58aa57ba247f3e9e4df248553cef686e3b736b9ea4a28d7"
 
       define_method(:install) do
         bin.install "tmx"
@@ -29,15 +29,15 @@ class TmxCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.0/tmx_0.2.0_linux_amd64.tar.gz"
-      sha256 "2e22e40810486b8cf39cfce714307ffe51925958873dcdb8404a9bcca23d151c"
+      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.1/tmx_0.2.1_linux_amd64.tar.gz"
+      sha256 "7b3ebd3a19165f9f23d02ee1a1e4f6b329109767613064c13d9efd47660b83d8"
       define_method(:install) do
         bin.install "tmx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.0/tmx_0.2.0_linux_arm64.tar.gz"
-      sha256 "d49a67a397efb1366ff968be155c3c8bb983e67224122e1220acf60130988217"
+      url "https://github.com/aronjanosch/tmx-cli/releases/download/v0.2.1/tmx_0.2.1_linux_arm64.tar.gz"
+      sha256 "b0b1f6d8c1f4de4b07403fb657acfc99b39401a615a261f29afe0670ad650906"
       define_method(:install) do
         bin.install "tmx"
       end
